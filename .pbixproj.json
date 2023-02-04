@@ -1,0 +1,28 @@
+{
+    "version": "0.12",
+    "deployments": {
+      "Files": {
+        "mode": "Report",
+        "source": {
+          "type": "File",
+          "path": "./*.pbix$"
+        },
+        "authentication": {
+          "type": "ServicePrincipal",
+          "tenantId": "64f42feb-ecb8-4fdf-8c86-061329888bb7",
+          "clientId": "968a9447-31a5-401f-b409-2259790dd85c",
+          "clientSecret": "TqH8Q~K1PA5Jk7pCxWHneG8W3ZSu~DlVWJhd6avR"
+        },
+        "options": {
+          "import": {
+            "nameConflict": "CreateOrOverwrite"
+          }
+        },
+        "environments": {
+          "PROD": {
+            "workspace": "pbi tools test"
+          }
+        }
+      }
+    }
+  }
